@@ -1,24 +1,24 @@
 <IfModule mod_expires.c>
-  ExpireActif le
+  ExpiresActive On
 
   # Images
-  ExpiresByType image / jpeg "accès plus 1 an"
-  ExpiresByType image / gif "accès plus 1 an"
-  ExpiresByType image / png "accès plus 1 an"
-  ExpiresByType image / webp "accès plus 1 an"
-  ExpiresByType image / svg + xml "accès plus 1 an"
-  ExpiresByType image / x-icon "accès plus 1 an"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
 
-  # Vidéo
-  ExpiresByType video / mp4 "access plus 1 year"
-  ExpiresByType video / mpeg "access plus 1 year"
+  # Video
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
 
   # CSS, JavaScript
-  ExpiresByType text / css "access plus 1 month"
-  ExpiresByType texte / javascript "accès plus 1 mois"
-  Application ExpiresByType / javascript "accès plus 1 mois"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
 
-  # Autres
-  ExpiresByType application / pdf "accès plus 1 mois"
-  ExpiresByType application / x-shockwave-flash "accès plus 1 mois"
-</IfModule>
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule
